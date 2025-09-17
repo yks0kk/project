@@ -1,48 +1,104 @@
 <!DOCTYPE html>
-<html>
-  <style>
-    /* Flexbox container */
-    .container {
-      display: flex;
-      justify-content: flex-end; /* Align to the right */
-    }
-  </style>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>a lil maths project</title>
-        <style>
-    h1 {
-      text-align: center; /* Centers the text horizontally */
-       font-size: 5rem; /* Larger font size (you can adjust this as needed) */
-       margin-bottom: 30px; /* Add space below the <h1> */
-    }
-  </style>
-        <style>
-  body {
-    background-image: url('Screenshot 2025-09-10 185542.jpg');
-    background-size: cover; /* Make sure the image covers the entire screen */
-    background-position: center; /* Position the image in the center */
-  }
-</style>
-<style>
-  iframe {
-margin-bottom: 200px; /* Add space below the <iframe> */
-  }
-</style>
-    </head>
-    <body>
-       <h1>MATHS INFUSED W/ IoT</h1>
-        <p style="font-size: 50px; text-align: center; ">مشروع الرياضيات والنشاط (انترنت الاشياء)</p>
-        <!-- The anchor tag wraps the button, which opens the provided OneDrive link -->
-          <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a lil maths project</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 5rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        iframe {
+            margin-bottom: 200px;
+        }
+
+        .left-right-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 50px;
+        }
+
+        .shiny-silver-button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(145deg, #d6d6d6, #f3f3f3);
+            border: 2px solid #c0c0c0;
+            border-radius: 8px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1), -3px -3px 6px rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+
+        .shiny-silver-button:hover {
+            background: linear-gradient(145deg, #f3f3f3, #d6d6d6);
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .shiny-silver-button:active {
+            transform: translateY(1px);
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        marquee {
+            font-size: 24px;
+            color: rgb(133, 153, 156);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            direction: ltr;
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            background-image: url('Screenshot 2025-09-10 185542.jpg');
+            background-size: cover;
+            background-position: center;
+            direction: rtl;
+        }
+    </style>
+</head>
+<body>
+    <h1>MATHS INFUSED W/ IoT</h1>
+    <p>مشروع الرياضيات والنشاط (انترنت الاشياء)</p>
     <a href="https://1drv.ms/p/c/04fe93d19a57badb/EcC6QoNPJ0ZHvIrzXdMoGLEBg-BHoZyVJAB90sKxi-jNGA?e=ocluqc" target="_blank">
         <button class="shiny-silver-button">ما هو اختبار القدرات وأسئله بسيطة</button>
     </a>
- <div class="container">
-<iframe src="https://scratch.mit.edu/projects/1216514416/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-</div>
-<marquee style="direction: ltr; font-size: 24px; color: rgb(133, 153, 156); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-   Project By:••••••••••••Jana Othman•••••••••••Lilian••••••••••••Jana Ahmed••••••••••••Eilaf Al Easa••••••••••••Ghina••••••••••••Jourey••••••••••••2/1 
-</marquee>
-    </body>
+    <div class="container">
+        <div class="left-right-container">
+            <div class="left">
+                <!-- Button on left side -->
+            </div>
+            <iframe src="https://scratch.mit.edu/projects/1216514416/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
+    </div>
+    <marquee>
+        Project By:••••••••••••Jana Othman•••••••••••Lilian••••••••••••Jana Ahmed••••••••••••Eilaf Al Easa••••••••••••Ghina••••••••••••Jourey••••••••••••2/1
+    </marquee>
+</body>
 </html>
