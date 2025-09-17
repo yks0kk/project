@@ -8,11 +8,13 @@
             text-align: center;
             font-size: 5rem;
             margin-bottom: 30px;
+            z-index: 10; /* Ensure it's on top */
         }
 
         p {
             font-size: 50px;
             text-align: center;
+            z-index: 10; /* Ensure it's on top */
         }
 
         .container {
@@ -36,7 +38,7 @@
         .shiny-silver-button {
             padding: 15px 30px;
             font-size: 16px;
-            color: white;
+            color: rgb(0, 0, 0);
             background: linear-gradient(145deg, #d6d6d6, #f3f3f3);
             border: 2px solid #c0c0c0;
             border-radius: 8px;
@@ -46,6 +48,7 @@
             text-decoration: none;
             font-family: 'Arial', sans-serif;
             text-align: center;
+            z-index: 10; /* Ensure it's on top */
         }
 
         .shiny-silver-button:hover {
@@ -65,13 +68,14 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             direction: ltr;
             margin-top: 20px;
+            z-index: 10; /* Ensure it's on top */
         }
 
         body {
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start; /* Ensure the content starts at the top */
             align-items: center;
             height: 100vh;
             margin: 0;
@@ -80,23 +84,30 @@
             background-size: cover;
             background-position: center;
             direction: rtl;
+            position: relative; /* Allows z-index to function properly */
+        }
+
+        /* Add spacing for content */
+        .content {
+            z-index: 10;
         }
     </style>
 </head>
 <body>
-    <h1>MATHS INFUSED W/ IoT</h1>
-    <p>مشروع الرياضيات والنشاط (انترنت الاشياء)</p>
-    <a href="https://1drv.ms/p/c/04fe93d19a57badb/EcC6QoNPJ0ZHvIrzXdMoGLEBg-BHoZyVJAB90sKxi-jNGA?e=ocluqc" target="_blank">
-        <button class="shiny-silver-button">ما هو اختبار القدرات وأسئله بسيطة</button>
-    </a>
+    <div class="content">
+        <h1>MATHS INFUSED W/ IoT</h1>
+        <p>مشروع الرياضيات والنشاط (انترنت الاشياء)</p>
+        <a href="https://1drv.ms/p/c/04fe93d19a57badb/EcC6QoNPJ0ZHvIrzXdMoGLEBg-BHoZyVJAB90sKxi-jNGA?e=ocluqc" target="_blank">
+            <button class="shiny-silver-button">ما هو اختبار القدرات وأسئله بسيطة</button>
+        </a>
+    </div>
+
     <div class="container">
         <div class="left-right-container">
-            <div class="left">
-                <!-- Button on left side -->
-            </div>
             <iframe src="https://scratch.mit.edu/projects/1216514416/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
         </div>
     </div>
+    
     <marquee>
         Project By:••••••••••••Jana Othman•••••••••••Lilian••••••••••••Jana Ahmed••••••••••••Eilaf Al Easa••••••••••••Ghina••••••••••••Jourey••••••••••••2/1
     </marquee>
