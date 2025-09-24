@@ -57,21 +57,43 @@ body{
             margin-bottom: 30px;
             margin-top: 30px;
         }
-        marquee{
-            font-size: 1.5rem;
-            margin-top: 15px;
+        .marquee-container {
+            width: 100%; /* Full width or customize as needed */
+            overflow: hidden;
+            position: relative;
+        }
+        .marquee {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%; /* Make sure the text starts off-screen to the left */
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translateX(-100%); /* Start off-screen to the left */
+            }
+            100% {
+                transform: translateX(100%); /* End off-screen to the right */
+            }
         }
     </style>
     </head>
     <body>
         <h1>Maths Infused W/ IoT</h1> 
         <h2>مشروع الرياضيات والنشاط (انترنت الاشياء)</h2>
+        <div class="shiny-silver-button">
+            <div></div>
         <a href="https://1drv.ms/p/c/04fe93d19a57badb/EfwoR9ecjB1OgYl_VmEUc4YBKpmmvqcxdD_tJQOjF7O7BA?e=5D9sdM" target="_blank">
              <button class="shiny-silver-button">ما هو اختبار القدرات وأسئله بسيطة</button>
         </a>
+        </div>
         <div>
             <iframe src="https://scratch.mit.edu/projects/1219666668/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
         </div>
-<marquee>مشروع: جنى عثمان، جنى احمد، غنى، جوري، ايلاف العيسى، ليليان Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1</marquee>
-    </body>
+        <div class="marquee-container">
+            <div class="marquee">
+<marquee>Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1 مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى</marquee>
+            </div>
+            </div>
+</body>
 </html>
