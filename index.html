@@ -22,7 +22,7 @@ body{
             margin-bottom: 40px;
         }
         .shiny-silver-button {
-            display: inline-block;
+            display: inline-block; /* shrink to content */
             padding: 15px 30px;
             font-size: 1.4rem;
             color: rgb(0, 0, 0);
@@ -49,37 +49,42 @@ body{
             transform: translateY(1px);
             box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
         }
-        .shiny-silver-button {
-      justify-content: center;
-      align-items: center;
-      align-self: center;
-    }
+
+        /* Button wrapper to center and control width */
+        .button-wrapper {
+            max-width: 80%;
+            margin: 0 auto 30px; /* center and add some bottom margin */
+            text-align: center;
+        }
+
         iframe{
             margin-bottom: 30px;
             margin-top: 30px;
         }
+
         .marquee-container {
-            width: 100%; /* Full width or customize as needed */
+            width: 100%; /* Full width */
             overflow: hidden;
             position: relative;
         }
 
         .marquee-content {
-            display: inline-block;
+            display: flex; /* flex for side-by-side text */
             width: max-content;
-            animation: scroll-left-right 30s linear infinite
+            animation: scroll-left-right 15s linear infinite; /* faster speed */
         }
+
         .marquee-text {
-    white-space: nowrap;
-    padding-right: 100px; /* space between repeated texts */
-}
+            white-space: nowrap;
+            padding-right: 100px; /* space between repeated texts */
+        }
 
         @keyframes scroll-left-right {
             0% {
-                transform: translateX(-50%); 
+                transform: translateX(-50%);
             }
             100% {
-                transform: translateX(0%); 
+                transform: translateX(0%);
             }
         }
     </style>
@@ -87,20 +92,25 @@ body{
     <body>
         <h1>Maths Infused W/ IoT</h1> 
         <h2>مشروع الرياضيات والنشاط (انترنت الاشياء)</h2>
-        <div style="max-width: 80%; margin: 0 auto; text-align: center;"></div>
-        <a href="https://1drv.ms/p/c/04fe93d19a57badb/EfwoR9ecjB1OgYl_VmEUc4YBKpmmvqcxdD_tJQOjF7O7BA?e=5D9sdM" target="_blank" class="shiny-silver-button">
-  ما هو اختبار القدرات وأسئله بسيطة
-</a>
-</div>
+        <!-- Added wrapper div for button -->
+        <div class="button-wrapper">
+          <a href="https://1drv.ms/p/c/04fe93d19a57badb/EfwoR9ecjB1OgYl_VmEUc4YBKpmmvqcxdD_tJQOjF7O7BA?e=5D9sdM" target="_blank" class="shiny-silver-button">
+            ما هو اختبار القدرات وأسئله بسيطة
+          </a>
+        </div>
         <div>
             <iframe src="https://scratch.mit.edu/projects/1219666668/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
         </div>
         <div class="marquee-container">
             <div class="marquee-content">
                 <div class="marquee-text">
-                Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1    مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى    Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1 مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
-            </div>
+                    Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
+                </div>
+                <div class="marquee-text">
+                    Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
+                </div>
             </div>
         </div>
 </body>
 </html>
+
