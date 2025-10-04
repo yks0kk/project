@@ -60,8 +60,8 @@
         }
 
         iframe {
-            margin-bottom: 30px;
-            margin-top: 30px;
+            margin: 30px auto;
+            display: block;
         }
 
         .marquee-container {
@@ -90,20 +90,15 @@
             }
         }
 
-        /* NEW STYLES for layout beside the Scratch game */
-        .game-links-wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            gap: 50px;
-            padding: 20px 40px; /* Add space from edges */
-        }
-
+        /* RIGHT SIDEBAR FOR LINKS */
         .links-sidebar {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            max-width: 250px;
+            position: absolute;
+            top: 250px; /* Adjust based on where you want it */
+            right: 40px; /* Space from the right edge */
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 12px;
+            max-width: 260px;
         }
 
         .links-sidebar h3 {
@@ -113,6 +108,7 @@
         }
 
         .links-sidebar a {
+            display: block;
             text-decoration: none;
             color: #333;
             font-size: 16px;
@@ -136,21 +132,20 @@
         </a>
     </div>
 
-    <!-- FLEX CONTAINER: Game + Links beside it -->
-    <div class="game-links-wrapper">
-        <!-- Scratch Game -->
+    <!-- Scratch game centered again -->
+    <div>
         <iframe src="https://scratch.mit.edu/projects/1222812314/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        
-        <!-- Links on the right -->
-        <div class="links-sidebar">
-            <h3>!تجهز لاختبار القدرات</h3>
-            <a href="https://t.me/vip_qustion" target="_blank">Link 1: Telegram - VIP Questions</a>
-            <a href="https://l.instagram.com/?u=https%3A%2F%2Fsalla.sa%2Frate100&e=AT0FiOqPlkbsGF4fyoDeyxIr81qWM1DIgZD0Y6DRauiOuxltzo6a1YCftSAPi-T2xYodez5h4eTRFMZPe-qYDPePadS17SK9wU6lw-UDFjqu4P2ZLX-rbYUSw7hp3qDIdH9hO7oa_6Rd" target="_blank">Link 2: Salla Rate100</a>
-            <a href="https://share.google/WAVelPI14xQVKwX2C" target="_blank">Link 3: Google Share</a>
-        </div>
     </div>
 
-    <!-- Scrolling marquee -->
+    <!-- RIGHT-SIDE LINKS -->
+    <div class="links-sidebar">
+        <h3>تجهز لاختبار القدرات!</h3>
+        <a href="https://t.me/vip_qustion" target="_blank">Link 1: Telegram - VIP Questions</a>
+        <a href="https://l.instagram.com/?u=https%3A%2F%2Fsalla.sa%2Frate100&e=AT0FiOqPlkbsGF4fyoDeyxIr81qWM1DIgZD0Y6DRauiOuxltzo6a1YCftSAPi-T2xYodez5h4eTRFMZPe-qYDPePadS17SK9wU6lw-UDFjqu4P2ZLX-rbYUSw7hp3qDIdH9hO7oa_6Rd" target="_blank">Link 2: Salla Rate100</a>
+        <a href="https://share.google/WAVelPI14xQVKwX2C" target="_blank">Link 3: Google Share</a>
+    </div>
+
+    <!-- Marquee stays as is -->
     <div class="marquee-container">
         <div class="marquee-content">
             <div class="marquee-text">
