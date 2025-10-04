@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a lil maths project</title>
     <style>
-body{
-    background-image: url('Screenshot 2025-09-10 185542.jpg');
-      background-size: cover;      /* cover the entire page */
-      background-repeat: no-repeat; /* don't repeat the image */
-      background-position: center; /* center the image */
-}
-        h1{
+        body {
+            background-image: url('Screenshot 2025-09-10 185542.jpg');
+            background-size: cover;      /* cover the entire page */
+            background-repeat: no-repeat; /* don't repeat the image */
+            background-position: center; /* center the image */
+        }
+        h1 {
             font-size: 4rem;
             text-align: center;
             color: black;
         }
-        h2{
+        h2 {
             font-size: 4rem;
             text-align: center;
             color: black;
@@ -38,47 +38,39 @@ body{
             text-align: center;
             z-index: 10; /* Ensure it's on top */
         }
-
         .shiny-silver-button:hover {
             background: linear-gradient(145deg, #f3f3f3, #d6d6d6);
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2), -3px -3px 10px rgba(255, 255, 255, 0.4);
             transform: translateY(-2px);
         }
-
         .shiny-silver-button:active {
             transform: translateY(1px);
             box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
         }
-
         /* Button wrapper to center and control width */
         .button-wrapper {
             max-width: 80%;
             margin: 0 auto 30px; /* center and add some bottom margin */
             text-align: center;
         }
-
-        iframe{
+        iframe {
             margin-bottom: 30px;
             margin-top: 30px;
         }
-
         .marquee-container {
             width: 100%; /* Full width */
             overflow: hidden;
             position: relative;
         }
-
         .marquee-content {
             display: flex; /* flex for side-by-side text */
             width: max-content;
             animation: scroll-left-right 15s linear infinite; /* faster speed */
         }
-
         .marquee-text {
             white-space: nowrap;
             padding-right: 10px; /* space between repeated texts */
         }
-
         @keyframes scroll-left-right {
             0% {
                 transform: translateX(-50%);
@@ -87,29 +79,67 @@ body{
                 transform: translateX(0%);
             }
         }
+        /* New CSS for the links section */
+        .links-container {
+            display: flex;
+            justify-content: center; /* Center the container horizontally */
+            margin-top: 30px; /* Add space from the Scratch game */
+            gap: 50px; /* Space between links and iframe */
+            padding: 20px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column; /* Stack links vertically */
+            align-items: center;
+        }
+        .links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin: 10px 0;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: #007acc;
+        }
+        .links h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px; /* Add space between subtitle and links */
+        }
     </style>
-    </head>
-    <body>
-        <h1>Maths Infused W/ IoT</h1> 
-        <h2>مشروع الرياضيات والنشاط (انترنت الاشياء)</h2>
-        <!-- Added wrapper div for button -->
-        <div class="button-wrapper">
-          <a href="https://1drv.ms/p/c/04fe93d19a57badb/EfwoR9ecjB1OgYl_VmEUc4YBKpmmvqcxdD_tJQOjF7O7BA?e=5D9sdM" target="_blank" class="shiny-silver-button">
+</head>
+<body>
+    <h1>Maths Infused W/ IoT</h1> 
+    <h2>مشروع الرياضيات والنشاط (انترنت الاشياء)</h2>
+    <!-- Added wrapper div for button -->
+    <div class="button-wrapper">
+        <a href="https://1drv.ms/p/c/04fe93d19a57badb/EfwoR9ecjB1OgYl_VmEUc4YBKpmmvqcxdD_tJQOjF7O7BA?e=5D9sdM" target="_blank" class="shiny-silver-button">
             ما هو اختبار القدرات وأسئله بسيطة
-          </a>
+        </a>
+    </div>
+    <div>
+        <iframe src="https://scratch.mit.edu/projects/1222812314/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+    <!-- Links section added -->
+    <div class="links-container">
+        <div class="links">
+            <h3>!تجهز لاختبار القدرات</h3>
+            <a href="https://t.me/vip_qustion" target="_blank">Link 1: VIP Questions on Telegram</a>
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fsalla.sa%2Frate100&e=AT0FiOqPlkbsGF4fyoDeyxIr81qWM1DIgZD0Y6DRauiOuxltzo6a1YCftSAPi-T2xYodez5h4eTRFMZPe-qYDPePadS17SK9wU6lw-UDFjqu4P2ZLX-rbYUSw7hp3qDIdH9hO7oa_6Rd" target="_blank">Link 2: Rate100 on Salla</a>
+            <a href="https://share.google/WAVelPI14xQVKwX2C" target="_blank">Link 3: Google Share Link</a>
         </div>
-        <div>
-            <iframe src="https://scratch.mit.edu/projects/1222812314/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
-        </div>
-        <div class="marquee-container">
-            <div class="marquee-content">
-                <div class="marquee-text">
-                    Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
-                </div>
-                <div class="marquee-text">
-                    Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
-                </div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <div class="marquee-text">
+                Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
+            </div>
+            <div class="marquee-text">
+                Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى◦◦◦◦◦◦◦◦Proj By: Jana Othman, Joury, Jana Ahmed, Lilian, Eilaf Al-Eesa, Ghina. 2/1◦◦◦◦◦◦◦◦ مشروع: جنى عثمان، جنى احمد، جوري، ايلاف العيسى، ليليان، غنى
             </div>
         </div>
+    </div>
 </body>
 </html>
